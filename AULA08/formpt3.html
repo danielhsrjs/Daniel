@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+
+<body>
+  <header>
+    <h1>Formulário</h1>
+    <small>Preencha os dados a seguir.</small>
+  </header>
+  <br>
+  <fieldset>
+    <legend>Dados do Aluno:</legend>
+    <form action="#">
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome">
+      <label for="email">E-Mail:</label>
+      <input type="email" name="email" id="email">
+      <br><br>
+      <label for="nascimento">Data de Nascimento:</label>
+      <input type="date" name="nascimento" id="nascimento">
+      <label for="cep">CEP:</label>
+      <input type="text" name="cep" id="cep" placeholder="02212-080">
+      <br><br>
+
+      <label for="genero">Gênero:</label> <br>
+      <input type="radio" name="curso" id="op1" value="op1">
+      <label for="op1">Masculino</label>
+      <br>
+      <input type="radio" name="curso" id="op2" value="op2">
+      <label for="op2">Feminino</label>
+      <br>
+      <input type="radio" name="curso" id="op3" value="op3">
+      <label for="op3">Prefiro não dizer</label>
+      <br><br>
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Selecione um local:</legend>
+    <label for="listaUnidade">Lista de Unidades:</label> <br> <br>
+    <select name="listaUnidade" id="listaUnidade">
+      <option value="" selected disabled autocomplete="on" hidden></option>
+      <!-- selected, disabled, autocomplete"on" e hidden servem para criar uma opção não selecionável -->
+      <option value="Santana">Santana</option>
+      <option value="Santo Amaro">Santo Amaro</option>
+      <option value="Itaquera">Itaquera</option>
+      <option value="Diadema">Diadema</option>
+    </select>
+
+    <br><br>
+
+    <textarea required name="tabela1" id="avaliacao" cols="30" rows="10"
+      placeholder="Deixe seu comentário aqui."></textarea>
+    </form>
+  </fieldset>
+</body>
+
+</html>
